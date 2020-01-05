@@ -1,24 +1,57 @@
+@import "functions";
+@import "variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 
 body {
-    background-color: lightgray;
+    font-family: 'Lato', sans-serif;
+    color: #545454;
+    font-size: 13px;
 }
-
+header {
+    line-height: 20px;
+    padding: 20px 0 0;
+    margin-bottom: 40px;
+}
 .header-logo-text {
     letter-spacing: 10px;
-    background-color: transparent;
     line-height: 60px;
     font-size: 60px;
     font-weight: 100;
-    font-family: 'Raleway-thin', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
-    box-sizing: border-box;
     text-align: center;
 }
 
-a{
+.tagline {
+    text-align: center;
+    margin-top: 15px;
+    color: #646464;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    text-transform: lowercase;
+    padding: 0 26px;
+}
 
+a{
+    color: #000000;
+}
+.active{
+    color: #000000;
+}
+
+.nav > li > a {
+    font-size: 11px;
+    padding: 23px 27px;
+    letter-spacing: 2px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.nav > li > a:focus {
+    outline:none;
+    border-radius: 0;
 }

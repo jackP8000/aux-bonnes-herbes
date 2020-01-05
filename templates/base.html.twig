@@ -11,50 +11,53 @@
 </head>
 <body>
 
-<header class="jumbotron text-center">
+<header>
     <div class="container">
         <div class="row">
-            <div class="col col-lg12">
-                <h1 class="header-logo-text">
-                    <a href="{{ path('homepage') }}">{{ 'header-title'|trans({}, 'base') }}</a>
+            <div class="col">
+                <h1 class="header-logo-text"><a href="{{ path('homepage') }}">{{ 'header-title'|trans({}, 'base') }}</a>
                 </h1>
-                <div>
-                    <p>{{ 'header-title-tagline'|trans({}, 'base') }}</p>
-                </div>
+                <p class="tagline">{{ 'header-title-tagline'|trans({}, 'base') }}</p>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-md">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ path('biography') }}">{{ 'biography'|trans({}, 'nav') }}<span
-                                class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        {{ 'lodging'|trans({}, 'nav') }}
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">lodging1</a>
-                        <a class="dropdown-item" href="#">lodging2</a>
-                        <a class="dropdown-item"
-                           href="{{ path('mettrie_place') }}">{{ 'mettrie-place'|trans({}, 'nav') }}</a>
-                        <a class="dropdown-item"
-                           href="{{ path('prestations') }}">{{ 'prestations'|trans({}, 'nav') }}</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('nearby') }}">{{ 'nearby'|trans({}, 'nav') }}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('contact') }}">{{ 'contact'|trans({}, 'nav') }}</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 </header>
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ path('biography') }}">{{ 'biography'|trans({}, 'nav') }}
+                            <span
+                                    class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            {{ 'lodging'|trans({}, 'nav') }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">lodging1</a>
+                            <a class="dropdown-item" href="#">lodging2</a>
+                            <a class="dropdown-item"
+                               href="{{ path('mettrie_place') }}">{{ 'mettrie-place'|trans({}, 'nav') }}</a>
+                            <a class="dropdown-item"
+                               href="{{ path('prestations') }}">{{ 'prestations'|trans({}, 'nav') }}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('nearby') }}">{{ 'nearby'|trans({}, 'nav') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('contact') }}">{{ 'contact'|trans({}, 'nav') }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
 
 {% block body %}{% endblock %}
