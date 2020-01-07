@@ -17,6 +17,26 @@ cs-ci:
 	./vendor/bin/php-cs-fixer fix src/ --dry-run --using-cache=no --verbose
 
 ##
+## start and stop server
+##---------------------------------------------------------------------------
+start: ## start symfony server
+	symfony server:start
+
+stop: ## stop server
+	symfony server:stop
+
+start-prod: ## start symfony server in production environnment
+	symfony server:start --env=prod
+
+##
+## Encore Webpack
+##---------------------------------------------------------------------------
+compile: ## Compile and copy SASS and JS files in dev
+	yarn encore dev-server
+compile-prod: ## Compile and copy SASS and JS files in production
+	yarn encore production
+
+##
 ## database creation
 ##---------------------------------------------------------------------------
 db-reset: ## Drop and recreate database
@@ -48,22 +68,3 @@ coverage:
 behat:
 	./vendor/bin/behat
 
-##
-## start and stop server
-##---------------------------------------------------------------------------
-start: ## start symfony server
-	symfony server:start
-
-stop: ## stop server
-	symfony server:stop
-
-start-prod: ## start symfony server in production environnment
-	symfony server:start --env=prod
-
-##
-## Encore Webpack
-##---------------------------------------------------------------------------
-compile: ## Compile and copy SASS and JS files in dev
-	yarn encore dev
-compile-prod: ## Compile and copy SASS and JS files in production
-	yarn encore production

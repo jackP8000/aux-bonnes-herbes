@@ -2,16 +2,27 @@
 @import "variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "fonts";
+
 
 body {
     font-family: 'Lato', sans-serif;
     color: #545454;
     font-size: 13px;
 }
+a{
+    color: $black;
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
 header {
     line-height: 20px;
     padding: 20px 0 0;
     margin-bottom: 40px;
+    text-align: center;
+
 }
 .header-logo-text {
     letter-spacing: 10px;
@@ -20,11 +31,9 @@ header {
     font-weight: 100;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .tagline {
-    text-align: center;
     margin-top: 15px;
     color: #646464;
     font-family: 'Caveat', cursive;
@@ -32,14 +41,6 @@ header {
     text-transform: lowercase;
     padding: 0 26px;
 }
-
-a{
-    color: #000000;
-}
-.active{
-    color: #000000;
-}
-
 .nav > li > a {
     font-size: 11px;
     padding: 23px 27px;
@@ -49,9 +50,8 @@ a{
     text-transform: uppercase;
     font-weight: 400;
     box-sizing: border-box;
-}
-
-.nav > li > a:focus {
-    outline:none;
-    border-radius: 0;
+    &:focus &:hover {
+        outline:none;
+        border-radius: 0;
+    }
 }
