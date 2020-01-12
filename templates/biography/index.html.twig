@@ -3,18 +3,62 @@
 {% block title %}Hello BiographyController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="container body-container">
+        <div class="row">
+            <div class="col">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/src/Controller/BiographyController.php'|file_link(0) }}">src/Controller/BiographyController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/templates/biography/index.html.twig'|file_link(0) }}">templates/biography/index.html.twig</a></code></li>
-    </ul>
-</div>
+                <img src="{{ asset('build/2017_marierenee-jeanluc.jpg') }}" alt="Qui sommes-nous ?">
+                <h1>Qui sommes-nous ?</h1>
+                <p>Aux portes de la Bretagne, tout près de la Roche aux Fées, Marie-Renée et Jean-Luc vous accueillent
+                    toute l’année dans leur lieu de vie, au contact direct avec la nature.</p>
+
+                <p>Acteurs ruraux, engagés de longue date en faveur du respect de l’environnement et de l’humain, nous
+                    mettons à
+                    disposition de nos hôtes plusieurs modes d’hébergement :</P>
+                <ul>
+                    <li>1 gite</li>
+                    <li>2 chambres d'hôtes</li>
+                    <li>1 unité familiale</li>
+                </ul>
+
+                <P>Une attention particulière a été apportée au choix des matériaux et leur impact éventuel sur
+                    l’environnement et la santé.</P>
+
+                <P>Une chambre a été également conçue pour accueillir des hôtes en situation de handicap.</P>
+
+                <P>Ce projet de gîte et de chambres d’hôtes, né il y a plusieurs années, a tout naturellement pris corps
+                    lorsque Marie-Renée s’est installée dans l’ancienne ferme familiale. Cet endroit authentique et
+                    vivant en
+                    perpétuelle évolution, vibre au rythme des saisons, foisonnant de richesses naturelles de par ses
+                    nombreux jardins et ses vergers plus particulièrement.</P>
+
+                <P>Il offre aux visiteurs quel que soit leur âge à la fois un hébergement de qualité, mais aussi un
+                    accueil
+                    empreint de simplicité et de bienveillance et l’on s’y sent tout de suite chez soi. Cet espace
+                    favorise le
+                    repos, le bien être au contact de la nature mais il se veut également un lieu
+                    d’animation favorable aux rencontres et aux échanges.</P>
+
+                <P>Depuis quelques années, Marie-Renée propose également de faire partager sa passion pour les plantes,
+                    même
+                    celles qu’on a coutume de nommer « mauvaises herbes ». Ne soyez donc pas étonnés. Dans les jardins
+                    comme sur
+                    les chemins vous irez à la rencontre des herbes folles. Celles-ci côtoient à foison les légumes
+                    traditionnels
+                    comme les plantes ornementales.</P>
+
+                <P>Après un séjour aux Bonnes Herbes, que ce soit pour une nuit ou un plus long séjour, vous repartirez
+                    reposés,
+                    riches d’expériences olfactives, gustatives, bienveillants à votre tour face aux richesses de la
+                    nature.</P>
+
+                <P>C’est ainsi que la vie s’écoule naturellement « Aux Bonnes Herbes ».</P>
+
+                <P>Enfin, chacun pourra trouver aux alentours de nombreuses activités (randonnées pédestres, à vélo,
+                    parcours de
+                    santé, lieux chargés d’histoire ou de légende, spectacles divers, etc.)</P>
+            </div>
+        </div>
+    </div>
 {% endblock %}

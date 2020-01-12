@@ -3,18 +3,164 @@
 {% block title %}Hello NearbyController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/src/Controller/NearbyController.php'|file_link(0) }}">src/Controller/NearbyController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/templates/nearby/index.html.twig'|file_link(0) }}">templates/nearby/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <div class="container body-container">
+        <div class="row">
+            <div class="col">
+                <h1>Aux alentours</h1>
+                <p><strong>Notre région</strong> offre aussi de multiples possibilités de connaître ses habitants, ses
+                    villes, ses animations, ses activités et chacun pourra y trouver selon ses envies quelque chose qui
+                    lui correspond.</p>
+                <p>En voici quelques-unes. Les documentations distribuées par les offices de tourisme sont présentes
+                    dans le gîte et nous serons là pour vous guider.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Activités sportives</h1>
+                <ul>
+                    <li>Randonnées pédestres ou VTT : de nombreux chemins sur Bais et les communes avoisinantes. <br>
+                        Cartes des circuits à disposition :
+                        <a href="https://www.bais35.fr/vie-pratique/randonnee-a-la-carte/">
+                            http://www.bais35.fr/vie-pratique/randonnee-a-la-carte/
+                        </a>
+                    </li>
+                    <li>Circuits Vélo : <a
+                                href="https://www.vitrecommunaute.org/wp-content/plugins/creasit-base-documentaire/telechargement.php?doc=3707">
+                            Télécharger les circuits de vélo au départ de Louvigné de Bais
+                        </a>
+                    </li>
+                    <li>Activités nautiques : à la base nautique de Haute Vilaine – à 30 minutes de Bais : <br>
+                        <a href="https://www.vitrecommunaute.org/base_nautique_haute_vilaine.html">
+                            https://www.vitrecommunaute.org/base_nautique_haute_vilaine.html
+                        </a>
+                    </li>
+                    <li>Golf des Rochers – à Argentré du Plessis à 15 kms</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Patrimoine</h1>
+            </div>
+            <div class="col-lg-5">
+                <figure>
+                    <img src="{{ asset('build/roche-aux-fees-cc-by-sa-yves-lc.jpg') }}" alt="Roche aux fées">
+                    <figcaption>Site mégalitique de la Roche aux Fées (Photo Yves LC)</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-7">
+                <ul>
+                    <li>
+                        <strong>Bais</strong> – l’église récemment rénovée avec son porche classé aux Monuments
+                        historiques :
+                        <a href="https://www.bais35.fr/">https://www.bais35.fr/</a>
+                    </li>
+                    <li>
+                        <strong>Géocaching</strong> : Télécharger l’application « Trésors de Bretagne »
+                        <a href="http://www.tresorsdehautebretagne.fr/caches/le-miracle-de-la-source">http://www.tresorsdehautebretagne.fr/caches/le-miracle-de-la-source</a>
+                    </li>
+                    <li><strong>Essé</strong> – <a
+                                href="http://www.cc-rocheauxfees.fr/accueil/la_decouvrir/visiter/la_roche_aux_fees_et_autres_megalithes">
+                            Site mégalithique de la Roche aux Fées
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Vitré</strong> (15 km) Cité de caractère – avec son château et ses vielles rues
+                        – <a href="http://bretagne-vitre.com/">http://bretagne-vitre.com/</a>
+                    </li>
+                    <li>
+                        <strong>Rennes</strong> (40 km) – Capitale de la Bretagne <a
+                                href="http://www.tourisme-rennes.com/">http://www.tourisme-rennes.com/</a>
+                    </li>
+                    <li>
+                        <strong>Fougères</strong> (35 km) – son château <a
+                                href="http://www.chateau-fougeres.com/>">http://www.chateau-fougeres.com/</a>
+                    </li>
+                    <li><strong>Saint Malo</strong> et Mont Saint Michel à 1h15</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Arts - Musées - Parcs - Jardins</h1>
+            </div>
+            <div class="col-lg-5">
+                <figure>
+                    <img src="{{ asset('build/2017_jardindesarts.jpg') }}" alt="Roche aux fées">
+                    <figcaption>Exposition Jardin des arts – Ar Milin (photo Jardin des arts)</figcaption>
+                </figure>
+                <figure>
+                    <img src="{{ asset('build/enigmaparc.jpg') }}" alt="Roche aux fées">
+                    <figcaption>Parc de Loisirs Enigmaparc à Janzé</figcaption>
+                </figure>
+
+            </div>
+            <div class="col-lg-7">
+                <ul>
+                    <li>
+                        <strong>Chateaubourg</strong> (20 km) – Exposition Jardin des arts. Chaque année, de Mai
+                        à Septembre, le parc d’Ar Milin devient le théâtre d’étranges apparitions : des
+                        sculptures géantes émergent entre les arbres séculaires. Une promenade étonnante à
+                        Chateaubourg :
+                        <a href="https://www.facebook.com/jardindesarts35/">https://www.facebook.com/jardindesarts35/</a>
+                    </li>
+                    <li>
+                        <strong>Piré sur Seiche </strong> (15 km) – Le Château des Pères –
+                        <a href="http://www.chateaudesperes.fr/exceptionnel-ensemble-de-10-sculptures-monumentales-dans-le-parc-du-chateau-des-peres-2/">
+                            Exposition d’œuvres monumentales
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>Cossé le Vivien</strong> (37 km) – Le musée de Robert Tatin :
+                        <a href="https://www.musee-robert-tatin.fr/">https://www.musee-robert-tatin.fr/</a>
+                    </li>
+                    <li>
+                        <strong>Corps-Nuds</strong> (30 km) – Les Jardins Rocambole <br>
+                        Un jardin éco-insolite de 6000 m2 autour d’un potager fantaisiste et coloré, poétique –
+                        rencontre entre art et nature –
+                        <a href="http://www.jardinsrocambole.fr/">http://www.jardinsrocambole.fr/</a>
+                    </li>
+                    <li>
+                        <strong>Vitré</strong> (15 km) – Centre Français du Patrimoine Culturel et Immatériel à
+                        Vitré – Exposition <a
+                                href="http://www.cfpci.fr/">http://www.cfpci.fr/</a>
+                    </li>
+                    <li><strong>Parc de loisirs à Janzé</strong> (20 km) – Plongez-vous aux cœurs de 12 univers
+                        remplis d’énigmes ! Menez l’enquête dans 2500 m2 de labyrinthes en intérieur remplis de
+                        jeux et énigmes. <a href="http://www.enigmaparc.fr/">http://www.enigmaparc.fr/</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Animations - Spectales</h1>
+                <ul>
+                    <li>Juin : Festival Désarticulés à Moulins et communes avoisinantes</li>
+                    <li>Juillet et août – Les mercredis de la Roche aux Fées</li>
+                    <li>Août – Spectacle  Son et Lumière « Les étincelles aquatiques » à Martigné</li>
+                    <li>Juillet et août – Les mardis de l’été à La Guerche de Bretagne</li>
+                    <li>Juillet et août – Les jeudis de l’été à Vitré</li>
+                    <li>Juillet et août – Vendredi en scènes  à Vitré</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Marchés</h1>
+                <ul>
+                    <li>La Guerche de Bretagne – Le mardi matin – Grand marché</li>
+                    <li>Vitré – Le lundi matin – Samedi matin (Petit marché des produits du terroir)</li>
+                    <li>Argentré du Plessis – le jeudi matin</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
 {% endblock %}
