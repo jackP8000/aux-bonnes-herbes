@@ -3,18 +3,124 @@
 {% block title %}Hello PartnersController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="container body-container">
+        <div class="row">
+            <div class="col">
+                <h1>Nos partenaires</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <figure>
+                    <a href="https://www.accueil-paysan.com/fr/">
+                        <img src="{{ asset('build/logo_accueil_paysan.gif') }}" alt="Logo Accueil Paysan">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-lg-9">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/src/Controller/PartnersController.php'|file_link(0) }}">src/Controller/PartnersController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/templates/partners/index.html.twig'|file_link(0) }}">templates/partners/index.html.twig</a></code></li>
-    </ul>
-</div>
+                <h2>Le label Accueil Paysan</h2>
+                <p><strong>Accueil Paysan</strong> c’est un réseau qui regroupe plus de 700 adhérents en France et 150
+                    adhérents dans les autres pays proposant une alternative au modèle de développement intensif de
+                    l’agriculture.</p>
+                <p><strong>Une alternative paysanne : </strong>ACCUEIL PAYSAN, fondé en 1987, est un groupement de
+                    paysans
+                    qui prenant appui sur leur activité agricole mettent en place un accueil touristique et social en
+                    relation avec tous les acteurs du développement local.</p>
+                <p>ACCUEIL PAYSAN, c’est aussi redonner au mot « Paysan » toute sa richesse. C’est l’homme du pays,
+                    celui qui connaît l’environnement, la nature et les respecte.</p>
+                <p>Consulter la
+                    <a href="https://www.accueil-paysan.com/fr/qui-sommes-nous/notre-charte/">
+                        charte Accueil Paysan
+                    </a>
+                </p>
+                <p>Consulter le site de
+                    <a href="http://www.accueil-paysan-en-bretagne.fr/trouver-un-lieu-daccueil/trouver-un-lieu-daccueil-ille-et-vilaine/">
+                        l'association Accueil Paysan Ille-et-Vilaine
+                    </a>
+                </p>
+                <p>Consulter le site de
+                    <a href="https://www.accueil-paysan.com/fr/contact/federation-nationale-accueil-paysan/">
+                        la fédération nationale Accueil Paysan
+                    </a>
+                </p>
+
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <figure>
+                    <a href="https://www.tourismebretagne.com">
+                        <img src="{{ asset('build/logo_tourisme_bretagne.jpg') }}" alt="Logo Toursime Bretagne">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-lg-9">
+
+                <h2>Comité Régional du Tourisme Bretagne</h2>
+                <p><strong>Les Expériences Bretonnes</strong> : <a
+                            href="https://www.tourismebretagne.com/preparer-mon-sejour/experiences-bretonnes/apprenez-a-reconnaitre-et-cuisiner-les-plantes-sauvages/">
+                        https://www.tourismebretagne.com/preparer-mon-sejour/experiences-bretonnes/apprenez-a-reconnaitre-et-cuisiner-les-plantes-sauvages/
+                    </a>
+                </p>
+
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <figure>
+                    <a href="https://bretagne-vitre.com/">
+                        <img src="{{ asset('build/logo_tourisme_vitre.jpg') }}" alt="Logo Toursime Vitré">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-lg-9">
+
+                <h2>Office du tourisme de Vitré</h2>
+                <p><a href="https://bretagne-vitre.com/">
+                        https://bretagne-vitre.com/
+                    </a>
+                </p>
+
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <figure>
+                    <a href="http://www.effet-vitre.bzh">
+                        <img src="{{ asset('build/logo_effet_vitre.jpg') }}" alt="Logo Effet Vitré">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-lg-9">
+
+                <h2>Ambassadrice du réseau l'effet Vitré</h2>
+                <p><a href="http://www.effet-vitre.bzh/leffet-vitre/">
+                        http://www.effet-vitre.bzh/leffet-vitre/
+                    </a>
+                </p>
+
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <figure>
+                    <a href="https://www.vivre-au-pays-guerchais.com/">
+                        <img src="{{ asset('build/logo_guerche.png') }}" alt="Logo Effet Vitré">
+                    </a>
+                </figure>
+            </div>
+            <div class="col-lg-9">
+
+                <h2>Office du toursime La Guerche de Bretagne</h2>
+                <p><a href="https://www.vivre-au-pays-guerchais.com/">
+                        https://www.vivre-au-pays-guerchais.com/
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
