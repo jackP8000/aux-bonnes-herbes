@@ -21,6 +21,11 @@ class Room
     /**
      * @ORM\Column(type="string", length=255)
      */
+    private string $slug;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
     private string $name;
 
     /**
@@ -31,7 +36,7 @@ class Room
     /**
      * @ORM\OneToOne(targetEntity="App\Entity\RoomPrice", mappedBy="room", cascade={"persist", "remove"})
      */
-    private float $roomPrice;
+    private RoomPrice $roomPrice;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Photo", mappedBy="room")
@@ -51,13 +56,6 @@ class Room
     public function getName(): ?string
     {
         return $this->name;
-    }
-
-    public function setName(string $name): self
-    {
-        $this->name = $name;
-
-        return $this;
     }
 
     public function getRoomPrice(): ?RoomPrice
@@ -116,6 +114,18 @@ class Room
                 $photo->setRoom(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
 
         return $this;
     }
