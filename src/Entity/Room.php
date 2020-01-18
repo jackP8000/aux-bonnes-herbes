@@ -36,12 +36,12 @@ class Room
     /**
      * @ORM\OneToOne(targetEntity="App\Entity\RoomPrice", mappedBy="room", cascade={"persist", "remove"})
      */
-    private RoomPrice $roomPrice;
+    private $roomPrice;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Photo", mappedBy="room")
      */
-    private ArrayCollection $photos;
+    private $photos;
 
     public function __construct()
     {
