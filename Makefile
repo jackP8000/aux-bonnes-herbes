@@ -46,7 +46,7 @@ db-reset: ## Drop and recreate database
 ##
 ## production migration
 ##---------------------------------------------------------------------------
-db-migrate: ## make migrations
+db-migrate: ## make migrationsm
 	./bin/console doctrine:migrations:migrate -n
 
 db-recreate: ## Reset and recreate database with migrations
