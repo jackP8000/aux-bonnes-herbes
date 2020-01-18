@@ -21,6 +21,11 @@ class Room
     /**
      * @ORM\Column(type="string", length=255)
      */
+    private string $slug;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
     private string $name;
 
     /**
@@ -37,11 +42,6 @@ class Room
      * @ORM\OneToMany(targetEntity="App\Entity\Photo", mappedBy="room")
      */
     private ArrayCollection $photos;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $slug;
 
     public function __construct()
     {
