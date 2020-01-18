@@ -34,7 +34,7 @@ class Photo
     private Room $room;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\PhotoCategory", mappedBy="photo")
+     * @ORM\ManyToMany(targetEntity="App\Entity\PhotoCategory", mappedBy="photos")
      */
     private ArrayCollection $photoCategories;
 
