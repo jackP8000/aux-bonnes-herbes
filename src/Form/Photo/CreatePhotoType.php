@@ -16,14 +16,12 @@ class CreatePhotoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('filename', FileType::class)
-            ->add('isThumbnail')
+            ->add('imageFile', FileType::class, [
+                'mapped' => false
+            ])
+            ->add('thumbnail')
             ->add('room', EntityType::class, [
                 'class' => Room::class,
-                'choice_label' => 'name'
-            ])
-            ->add('photoCategories', EntityType::class, [
-                'class' => PhotoCategory::class,
                 'choice_label' => 'name'
             ])
         ;
@@ -33,6 +31,7 @@ class CreatePhotoType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Photo::class,
+            'csrf_protection' => false,
         ]);
     }
 }

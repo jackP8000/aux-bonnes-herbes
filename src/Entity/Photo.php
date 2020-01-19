@@ -26,17 +26,17 @@ class Photo
     /**
      * @ORM\Column(type="boolean")
      */
-    private bool $isThumbnail;
+    private $thumbnail;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Room", inversedBy="photos")
      */
-    private Room $room;
+    private $room;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\PhotoCategory", mappedBy="photos")
      */
-    private ArrayCollection $photoCategories;
+    private $photoCategories;
 
     public function __construct()
     {
@@ -60,16 +60,14 @@ class Photo
         return $this;
     }
 
-    public function getIsThumbnail(): ?bool
+    public function isThumbnail(): ?bool
     {
-        return $this->isThumbnail;
+        return $this->thumbnail;
     }
 
-    public function setIsThumbnail(bool $isThumbnail): self
+    public function setThumbnail(bool $thumbnail): void
     {
-        $this->isThumbnail = $isThumbnail;
-
-        return $this;
+        $this->thumbnail = $thumbnail;
     }
 
     public function getRoom(): ?Room

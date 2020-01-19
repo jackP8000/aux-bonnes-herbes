@@ -26,7 +26,7 @@ class PhotoCategory
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Photo", inversedBy="photoCategories")
      */
-    private ArrayCollection $photos;
+    private $photos;
 
     public function __construct()
     {

@@ -31,6 +31,9 @@ class CreateController extends AbstractController
         $photoForm->handleRequest($request);
 
         if ($photoForm->isSubmitted() && $photoForm->isValid()) {
+            $uploadedFile = $photoForm['imageFile']->getData();
+
+            dd($uploadedFile);
         }
 
         return $this->render('admin/photo/create.html.twig', [
