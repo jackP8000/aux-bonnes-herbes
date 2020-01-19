@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'biography'|trans({}, 'document-title') }}{% endblock %}
+
+{% block body %}
+
+<div class="container body-container">
+    <div class="row">
+        <div class="col">
+            {{ form_start(photoForm) }}
+            {{ form_widget(photoForm) }}
+            <button type="submit" class="btn btn-primary">Create!</button>
+            {{ form_end(photoForm) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

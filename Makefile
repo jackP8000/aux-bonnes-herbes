@@ -20,7 +20,7 @@ cs-ci:
 ## start and stop server
 ##---------------------------------------------------------------------------
 start: ## start symfony server
-	symfony server:start
+	symfony server:start --no-tls
 
 stop: ## stop server
 	symfony server:stop
