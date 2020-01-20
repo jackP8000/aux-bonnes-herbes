@@ -3,7 +3,6 @@
 namespace App\Form\Photo;
 
 use App\Entity\Photo;
-use App\Entity\PhotoCategory;
 use App\Entity\Room;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -17,12 +16,12 @@ class CreatePhotoType extends AbstractType
     {
         $builder
             ->add('imageFile', FileType::class, [
-                'mapped' => false
+                'mapped' => false,
             ])
             ->add('thumbnail')
             ->add('room', EntityType::class, [
                 'class' => Room::class,
-                'choice_label' => 'name'
+                'choice_label' => 'name',
             ])
         ;
     }
