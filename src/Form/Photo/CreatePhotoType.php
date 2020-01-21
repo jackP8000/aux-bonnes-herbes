@@ -9,6 +9,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Image;
+use Symfony\Component\Validator\Constraints\NotNull;
 
 class CreatePhotoType extends AbstractType
 {
@@ -17,6 +19,11 @@ class CreatePhotoType extends AbstractType
         $builder
             ->add('imageFile', FileType::class, [
                 'mapped' => false,
+                'constraints' => [
+                    new Image([
+                        'maxSize' => '3M'
+                    ])
+                ]
             ])
             ->add('thumbnail')
             ->add('room', EntityType::class, [
