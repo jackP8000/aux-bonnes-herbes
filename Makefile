@@ -20,7 +20,8 @@ cs-ci:
 ## start and stop server
 ##---------------------------------------------------------------------------
 start: ## start symfony server
-	symfony server:start --no-tls
+	symfony run -d yarn encore dev --watch
+	symfony serve --no-tls -d
 
 stop: ## stop server
 	symfony server:stop

@@ -42,9 +42,15 @@
                             {{ 'lodging'|trans({}, 'nav') }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            {{ render(controller(
+{#                            {{ render(controller(
                                 'App\\Controller\\NavController::getRooms'
-                            )) }}
+                            )) }}#}
+                            <a class="dropdown-item"
+                               href="{{ path('le-gite-show') }}">{{ 'title'|trans({}, 'le-gite') }}</a>
+                            <a class="dropdown-item"
+                               href="{{ path('papillons-show') }}">{{ 'title'|trans({}, 'papillons') }}</a>
+                            <a class="dropdown-item"
+                               href="{{ path('soleil-levant-show') }}">{{ 'title'|trans({}, 'soleil-levant') }}</a>
                             <a class="dropdown-item"
                                href="{{ path('mettrie_place') }}">{{ 'mettrie-place'|trans({}, 'nav') }}</a>
                             <a class="dropdown-item"

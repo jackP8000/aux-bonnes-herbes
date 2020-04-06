@@ -10,7 +10,7 @@ class BiographyController extends AbstractController
     /**
      * @Route("/biography", name="biography")
      */
-    public function index()
+    public function show()
     {
         return $this->render('biography/index.html.twig', [
             'controller_name' => 'BiographyController',

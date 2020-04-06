@@ -2,19 +2,35 @@
 
 namespace App\Controller;
 
-use App\Entity\Room;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 class RoomController extends AbstractController
 {
     /**
-     * @Route("/room/{slug}", name="room")
+     * @Route("/location/le-gite", name="le-gite-show")
      */
-    public function index(Room $room)
+    public function leGiteShow()
     {
-        return $this->render('room/index.html.twig', [
-            'room' => $room,
+        return $this->render('room/le_gite.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/chambre/papillons", name="papillons-show")
+     */
+    public function papillonsShow()
+    {
+        return $this->render('room/papillons.html.twig', [
+        ]);
+    }
+
+    /**
+     * @Route("/chambre/soleil-levant", name="soleil-levant-show")
+     */
+    public function soleilLevantShow()
+    {
+        return $this->render('room/soleil_levant.html.twig', [
         ]);
     }
 }

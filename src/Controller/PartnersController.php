@@ -10,7 +10,7 @@ class PartnersController extends AbstractController
     /**
      * @Route("/partners", name="partners")
      */
-    public function index()
+    public function show()
     {
         return $this->render('partners/index.html.twig', [
             'controller_name' => 'PartnersController',

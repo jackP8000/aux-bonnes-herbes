@@ -10,7 +10,7 @@ class NearbyController extends AbstractController
     /**
      * @Route("/nearby", name="nearby")
      */
-    public function index()
+    public function show()
     {
         return $this->render('nearby/index.html.twig', [
             'controller_name' => 'NearbyController',
