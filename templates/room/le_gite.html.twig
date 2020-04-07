@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class="container body-container">
+    <div class="row">
+        <div class="col">
+            <h1>{{ 'title'|trans({}, 'le-gite') }}</h1>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="figure">
+                                <img src="{{ asset('build/le-gite/entrance.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'le-gite.entrance.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'le-gite.entrance.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/le-gite/kitchen.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'le-gite.kitchen.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'le-gite.kitchen.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/le-gite/living-space.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'le-gite.living-space.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'le-gite.living-space.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/le-gite/room-1.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'le-gite.room-1.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'le-gite.room-1.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/le-gite/room-2.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'le-gite.room-2.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'le-gite.room-2.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+                <p>{{ 'baseline-1'|trans({}, 'le-gite') }}</p>
+
+                <p>{{ 'baseline-2'|trans({}, 'le-gite') }}</p>
+
+                <h1>{{ 'subtitle-1'|trans({}, 'le-gite') }}</h1>
+
+                <ul>
+                    <li>{{ 'equipment.kitchen'|trans({}, 'le-gite') }}</li>
+                    <li>{{ 'equipment.living-space'|trans({}, 'le-gite') }}</li>
+                </ul>
+                <p>{{ 'equipment.library'|trans({}, 'le-gite') }}</p>
+                <p>{{ 'equipment.chimney'|trans({}, 'le-gite') }}</p>
+                <p>{{ 'equipment.sanitary'|trans({}, 'le-gite') }}</p>
+
+                <h1>{{ 'subtitle-2'|trans({}, 'le-gite') }}</h1>
+                <ul>
+                    <li>{{ 'equipment.room'|trans({}, 'le-gite') }}</li>
+                    <li>{{ 'equipment.terrace'|trans({}, 'le-gite') }}</li>
+                </ul>
+                <p>{{ 'equipment.washing-machine'|trans({}, 'le-gite') }}</p>
+
+            {#{{ room.description|raw }}#}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,20 +1,102 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MettriePlaceController!{% endblock %}
+{% block title %}{{ 'partners'|trans({}, 'document-title') }}{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="container body-container">
+        <div class="row">
+            <div class="col">
+                <h1>Le lieu</h1>
+                <figure>
+                    <img src="{{ asset('build/place/cour.jpg') }}" alt="Vue de la maison depuis le bas de la cour">
+                </figure>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/entrance.jpg') }}" alt="Jardin décoratif - entrée de la maison">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/entrance-2.jpg') }}" alt="Entrée dans la cour">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/garden-1.jpg') }}" alt="Terrain en bas de la cour">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/gite_entrance.jpg') }}" alt="Vélo, entrée du gîte">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/kitchen-garden-2.jpg') }}" alt="Jardin potager">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/kitchen-garden.jpg') }}" alt="Jardin potager 2">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/backyard.jpg') }}" alt="Jardin derrière la maison">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/boules-pitch-1.jpg') }}" alt="Jardin derrière la maison">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/boules-pitch-2.jpg') }}" alt="Jardin derrière la maison">
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Aux alentours</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <figure>
+                    <img class="figure-img" src="{{ asset('build/place/around-1.jpg') }}" alt="Campagne de Bais">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/around-2.jpg') }}" alt="Campagne de Bais">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/around-3.jpg') }}" alt="Campagne de Bais">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/around-4.jpg') }}" alt="Campagne de Bais">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/around-5.jpg') }}" alt="Les miniatures de Claret">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="{{ asset('build/place/around-6.jpg') }}" alt="La Roche aux fées">
+                </figure>
+            </div>
+        </div>
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/src/Controller/MettriePlaceController.php'|file_link(0) }}">src/Controller/MettriePlaceController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/templates/mettrie_place/index.html.twig'|file_link(0) }}">templates/mettrie_place/index.html.twig</a></code></li>
-    </ul>
-</div>
 {% endblock %}

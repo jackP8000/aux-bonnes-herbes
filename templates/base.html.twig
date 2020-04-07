@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/favicon-1.ico') }}">
+
     <title>{% block title %}{{ 'doctype-title'|trans({}, 'base') }}{% endblock %}</title>
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
@@ -40,8 +42,15 @@
                             {{ 'lodging'|trans({}, 'nav') }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="#">lodging1</a>
-                            <a class="dropdown-item" href="#">lodging2</a>
+{#                            {{ render(controller(
+                                'App\\Controller\\NavController::getRooms'
+                            )) }}#}
+                            <a class="dropdown-item"
+                               href="{{ path('le-gite-show') }}">{{ 'title'|trans({}, 'le-gite') }}</a>
+                            <a class="dropdown-item"
+                               href="{{ path('papillons-show') }}">{{ 'title'|trans({}, 'papillons') }}</a>
+                            <a class="dropdown-item"
+                               href="{{ path('soleil-levant-show') }}">{{ 'title'|trans({}, 'soleil-levant') }}</a>
                             <a class="dropdown-item"
                                href="{{ path('mettrie_place') }}">{{ 'mettrie-place'|trans({}, 'nav') }}</a>
                             <a class="dropdown-item"

@@ -20,7 +20,8 @@ cs-ci:
 ## start and stop server
 ##---------------------------------------------------------------------------
 start: ## start symfony server
-	symfony server:start
+	symfony run -d yarn encore dev --watch
+	symfony serve --no-tls -d
 
 stop: ## stop server
 	symfony server:stop
@@ -46,7 +47,7 @@ db-reset: ## Drop and recreate database
 ##
 ## production migration
 ##---------------------------------------------------------------------------
-db-migrate: ## make migrations
+db-migrate: ## make migrationsm
 	./bin/console doctrine:migrations:migrate -n
 
 db-recreate: ## Reset and recreate database with migrations

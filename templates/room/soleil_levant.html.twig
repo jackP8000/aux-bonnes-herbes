@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div class="container body-container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ 'title'|trans({}, 'soleil-levant') }}</h1>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="figure">
+                                <img src="{{ asset('build/soleil-levant/bed.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'soleil-levant.bed.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'soleil-levant.bed.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/soleil-levant/window.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'soleil-levant.window.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'soleil-levant.window.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/soleil-levant/commode.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'soleil-levant.commode.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'soleil-levant.commode.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <p>{{ 'section-1'|trans({}, 'soleil-levant') }}</p>
+
+                <ul>
+                    <li>{{ 'equipment.sanitary'|trans({}, 'soleil-levant') }}</li>
+                    <li>{{ 'equipment.couch'|trans({}, 'soleil-levant') }}</li>
+                    <li>{{ 'equipment.storage'|trans({}, 'soleil-levant') }}</li>
+                    <li>{{ 'equipment.furniture'|trans({}, 'soleil-levant') }}</li>
+                    <li>{{ 'equipment.internet'|trans({}, 'soleil-levant') }}</li>
+                </ul>
+
+                <p>{{ 'section-2'|trans({}, 'soleil-levant') }}</p>
+                <p>{{ 'section-3'|trans({}, 'soleil-levant') }}</p>
+                <h1>{{ 'subtitle-1'|trans({}, 'soleil-levant') }}</h1>
+                <p>{{ 'section-4'|trans({}, 'soleil-levant') }}</p>
+                <p>{{ 'section-5'|trans({}, 'soleil-levant') }}</p>
+
+                {#{{ room.description|raw }}#}
+            </div>
+        </div>
+    </div>
+{% endblock %}

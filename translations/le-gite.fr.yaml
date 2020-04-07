@@ -1,0 +1,19 @@
+title: "Le Gîte"
+
+baseline-1: "Le gîte est une ancienne maison en pierre, restaurée avec gout et simplicité."
+baseline-2: "D’une surface d’environ 30 m2, vous serez charmé par la qualité de l’aménagement."
+
+subtitle-1: "Au rez-de-chaussée"
+subtitle-2 : "A l'étage"
+subtitle-3: "Galerie photos"
+
+equipment:
+    kitchen: "Cuisine aménagée, avec plaque de cuisson, four électrique, frigidaire et vaisselle nécessaire pour cuisiner."
+    living-space: "L'espace de vie"
+    library: "Une bibliothèque est à votre disposition avec différents livres (BD, romans, revues…). Un canapé convertible peut à l’occasion servir de couchage d’un adulte ou de deux enfants."
+    couch: "Un canapé convertible peut à l’occasion servir de couchage d’un adulte ou de deux enfants."
+    chimney: "Une cheminée avec un insert rend les soirées chaleureuses et agréables."
+    sanitary: "Les sanitaires, avec douche, lavabo et WC."
+    room: "Chambre en mezzanine. Deux fauteuils, commode, chevets"
+    terrace: "Une terrasse côté champ permet la tranquillité et la possibilité de manger à l’extérieur. Un jardinet est à disposition avec quelques plantes aromatiques."
+    washing-machine: "Dans un local mitoyen, un lave linge est disponible."

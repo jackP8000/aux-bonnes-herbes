@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div class="container body-container">
+        <div class="row">
+            <div class="col">
+                <h1>{{ 'title'|trans({}, 'papillons') }}</h1>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="figure">
+                                <img src="{{ asset('build/papillons/sud-est-2.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'papillons.sud-est-2.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'papillons.sud-est-2.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/papillons/nord.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'papillons.nord.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'papillons.nord.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/papillons/sdb.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'papillons.sdb.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'papillons.sdb.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="{{ asset('build/papillons/sud-est.jpg') }}"
+                                     class="d-block w-100 figure-img img-fluid rounded"
+                                     alt="{{ 'papillons.sud-est.alt'|trans({}, 'photos') }}">
+                                <figcaption
+                                        class="figure-caption text-right">{{ 'papillons.sud-est.caption'|trans({}, 'photos') }}</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <p>{{ 'section-1'|trans({}, 'papillons') }}</p>
+
+                <ul>
+                    <li>{{ 'equipment.sanitary'|trans({}, 'papillons') }}</li>
+                    <li>{{ 'equipment.couch'|trans({}, 'papillons') }}</li>
+                    <li>{{ 'equipment.storage'|trans({}, 'papillons') }}</li>
+                    <li>{{ 'equipment.furniture'|trans({}, 'papillons') }}</li>
+                    <li>{{ 'equipment.internet'|trans({}, 'papillons') }}</li>
+                </ul>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-10">
+                        <p>{{ 'section-2'|trans({}, 'papillons') }}</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <figure>
+                            <a href="https://www.entreprises.gouv.fr/marques-nationales-tourisme/marque-d-etat-tourisme-et-handicap">
+                                <img src="{{ asset('build/papillons/tourisme_handicap.jpg') }}" alt="Logo Marques d'Etat Tourisme et Handicap">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <p>{{ 'section-3'|trans({}, 'papillons') }}</p>
+                <p>{{ 'section-4'|trans({}, 'papillons') }}</p>
+                <h1>{{ 'subtitle-1'|trans({}, 'papillons') }}</h1>
+                <p>{{ 'section-5'|trans({}, 'papillons') }}</p>
+                <p>{{ 'section-6'|trans({}, 'papillons') }}</p>
+
+                {#{{ room.description|raw }}#}
+            </div>
+        </div>
+    </div>
+{% endblock %}

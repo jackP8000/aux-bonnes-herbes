@@ -1,0 +1,42 @@
+le-gite:
+    entrance:
+        alt: "Vue de l'entrée du gîte depuis la cour"
+        caption: "Vue de l'entrée du gîte depuis la cour"
+    kitchen:
+        alt: "Cuisine aménagée, avec plaque de cuisson, four électrique et réfrigérateur"
+        caption: "Cuisine aménagée, avec plaque de cuisson, four électrique et réfrigérateur"
+    living-space:
+        alt: "Espace de vie avec table à manger, bibliothèque et canapé convertible à disposition"
+        caption: "Espace de vie avec table à manger, bibliothèque et canapé convertible à disposition"
+    room-1:
+        alt: "Chambre à l'étage, en mezzanine"
+        caption: "Chambre à l'étage, en mezzanine"
+    room-2:
+        alt: "Chambre en mezzanine, avec deux fauteuils à disposition"
+        caption: "Chambre en mezzanine, avec deux fauteuils à disposition, et rangement"
+    terrace:
+        alt: "Terrace accessible, avec table et chaises, et accès à la pelouse devant la terrasse"
+        caption: "Terrace accessible, avec table et chaises, et accès à la pelouse devant la terrasse"
+papillons:
+    sud-est-2:
+        alt: "Vue de la chambre vers la fenêtre exposé sud"
+        caption: "Vue de la chambre vers la fenêtre exposé sud"
+    sud-est:
+        alt: "La chambre est accessible aux handicapés et possède un lit 160X200 \"Queen Size\""
+        caption: "La chambre est accessible aux handicapés et possède un lit 160X200 \"Queen Size\""
+    sdb:
+        alt: "Grande salle de bain privative avec douche à l'italienne"
+        caption: "Grande salle de bain privative avec douche à l'italienne"
+    nord:
+        alt: "Accès direct à la salle de bain depuis la chambre"
+        caption: "Accès direct à la salle de bain depuis la chambre"
+soleil-levant:
+    window:
+        alt: "Vue de la chambre vers la fenêtre exposé Est"
+        caption: "Vue de la chambre vers la fenêtre exposé Est"
+    bed:
+        alt: "Grand lit 160X200"
+        caption: "Grand lit 160X200"
+    commode:
+        alt: "Accès direct à la salle de bain depuis la chambre"
+        caption: "Accès direct à la salle de bain depuis la chambre"
