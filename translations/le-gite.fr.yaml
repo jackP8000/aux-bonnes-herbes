@@ -1,14 +1,16 @@
-title: "Le Gîte"
+title: Le Gîte
+description: Le gîte est une ancienne maison en pierre, d'une surface d'environ 30m² sur 2 niveaux.
+    Il comprend cuisine, salle de bain, pièce de vie et terrasse au rez de chaussé, et chambre à l'étage.
 
-baseline-1: "Le gîte est une ancienne maison en pierre, restaurée avec gout et simplicité."
-baseline-2: "D’une surface d’environ 30 m2, vous serez charmé par la qualité de l’aménagement."
+baseline-1: Le gîte est une ancienne maison en pierre, restaurée avec gout et simplicité.
+baseline-2: D’une surface d’environ 30 m2, vous serez charmé par la qualité de l’aménagement.
 
-subtitle-1: "Au rez-de-chaussée"
-subtitle-2 : "A l'étage"
-subtitle-3: "Galerie photos"
+subtitle-1: Au rez-de-chaussée
+subtitle-2 : A l'étage
+subtitle-3: Galerie photos
 
 equipment:
-    kitchen: "Cuisine aménagée, avec plaque de cuisson, four électrique, frigidaire et vaisselle nécessaire pour cuisiner."
+    kitchen: Cuisine aménagée, avec plaque de cuisson, four électrique, frigidaire et vaisselle nécessaire pour cuisiner.
     living-space: "L'espace de vie"
     library: "Une bibliothèque est à votre disposition avec différents livres (BD, romans, revues…). Un canapé convertible peut à l’occasion servir de couchage d’un adulte ou de deux enfants."
     couch: "Un canapé convertible peut à l’occasion servir de couchage d’un adulte ou de deux enfants."
