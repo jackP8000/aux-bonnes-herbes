@@ -3,18 +3,39 @@
 {% block title %}{{ 'homepage'|trans({}, 'document-title') }}{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+                <div class="card-group">
+                    <div class="card">
+                        <a href="{{ path('le-gite-show') }}"><img src="{{ asset('build/le-gite/entrance.jpg') }}"
+                                                                  class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ 'title'|trans({}, 'le-gite') }}</h5>
+                            <p class="card-text">{{ 'description'|trans({}, 'le-gite') }}</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="{{ path('papillons-show') }}"><img src="{{ asset('build/papillons/sud-est-2.jpg') }}"
+                                                                    class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ 'title'|trans({}, 'papillons') }}</h5>
+                            <p class="card-text">{{ 'descripton'|trans({}, 'papillons') }}</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="{{ path('soleil-levant-show') }}"><img src="{{ asset('build/soleil-levant/bed.jpg') }}"
+                                                                        class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ 'title'|trans({}, 'soleil-levant') }}</h5>
+                            <p class="card-text">{{ 'description'|trans({}, 'soleil-levant') }}</p>
+{#                            <div class="text-right"><a href="#" class="text-right btn btn-dark">Reserver</a></div>#}
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/src/Controller/HomepageController.php'|file_link(0) }}">src/Controller/HomepageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/aux_bonnes_herbes/templates/homepage/index.html.twig'|file_link(0) }}">templates/homepage/index.html.twig</a></code></li>
-    </ul>
-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
