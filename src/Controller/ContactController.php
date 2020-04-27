@@ -24,6 +24,10 @@ class ContactController extends AbstractController
 
         if ($contactForm->isSubmitted() && $contactForm->isValid()) {
             $mailer->sendContactMessage($contactFormDTO);
+
+            $this->addFlash('success', 'contact-form.success');
+
+            return $this->redirectToRoute('contact');
         }
 
         return $this->render('contact/index.html.twig', [

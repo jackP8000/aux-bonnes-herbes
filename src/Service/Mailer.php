@@ -16,7 +16,7 @@ class Mailer
         $this->mailer = $mailer;
     }
 
-    public function sendContactMessage(contactFormDTO $contactFormDTO)
+    public function sendContactMessage(contactFormDTO $contactFormDTO): TemplatedEmail
     {
         $email = (new TemplatedEmail())
             ->from(new Address($contactFormDTO->getEmail(), $contactFormDTO->getName()))
@@ -26,5 +26,7 @@ class Mailer
             ->context(['contactFormDTO' => $contactFormDTO])
         ;
         $this->mailer->send($email);
+
+        return $email;
     }
 }

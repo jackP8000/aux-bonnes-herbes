@@ -4,7 +4,7 @@ namespace App\Model\DTO;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-class contactFormDTO
+class ContactFormDTO
 {
     /**
      * @Assert\NotBlank(message="contact.firstname.required")
