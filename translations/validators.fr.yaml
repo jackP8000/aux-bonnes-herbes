@@ -1,0 +1,10 @@
+contact:
+    firstname:
+        required: Vous devez rentrer un prénom
+    lastname:
+        required: Vous devez rentrer un nom
+    email:
+        required: Vous devez rentrer une adresse email
+        invalid: Le format de l'adresse email n'est pas valide
+    message:
+        required: N'oubliez pas votre message

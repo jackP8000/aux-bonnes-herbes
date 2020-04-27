@@ -120,6 +120,12 @@
     "laminas/laminas-zendframework-bridge": {
         "version": "1.0.3"
     },
+    "league/html-to-markdown": {
+        "version": "4.9.1"
+    },
+    "lorenzo/pinky": {
+        "version": "1.0.5"
+    },
     "m6web/php-cs-fixer-config": {
         "version": "v1.2.0"
     },
@@ -574,8 +580,17 @@
     "symfony/yaml": {
         "version": "v5.0.0"
     },
+    "tijsverkoyen/css-to-inline-styles": {
+        "version": "2.2.2"
+    },
+    "twig/cssinliner-extra": {
+        "version": "v3.0.3"
+    },
     "twig/extra-bundle": {
         "version": "v3.0.0"
+    },
+    "twig/inky-extra": {
+        "version": "v3.0.3"
     },
     "twig/twig": {
         "version": "v3.0.0"

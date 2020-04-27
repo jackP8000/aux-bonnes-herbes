@@ -1,0 +1,37 @@
+{% extends 'email/email.base.html.twig' %}
+
+{% block content %}
+    <row>
+        <columns>
+            <p>
+                <strong>{{ contactFormDTO.name }}</strong> vous a contacté par le biais du formulaire de contact d'Aux
+                Bonnes Herbes.
+            </p>
+        </columns>
+    </row>
+    <row>
+        <columns>
+            <p>
+                Voici son message :
+            </p>
+        </columns>
+    </row>
+    <spacer size="30"></spacer>
+    <row>
+        <columns>
+            <center>
+                <i>{{ contactFormDTO.message }}</i>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    <row>
+        <columns>
+            <center>
+                Vous pouvez lui répondre par mail :
+                <a href="mailto:{{ contactFormDTO.email }}">{{ contactFormDTO.email }}</a>
+            </center>
+        </columns>
+    </row>
+
+{% endblock %}

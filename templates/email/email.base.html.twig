@@ -1,0 +1,30 @@
+{% apply inky_to_html|inline_css(source('@styles/foundation-emails.css'), source('@styles/email.css')) %}
+    <container>
+        <row class="header">
+            <columns>
+                <a href="{{ url('homepage') }}">
+                    <img src="{{ email.image('@images/email/logo_abh.jpg') }}" class="logo" alt="AUx Bonnes Herbes Logo">
+                </a>
+            </columns>
+        </row>
+
+        {% block content%}{% endblock %}
+
+        <row class="footer">
+{#            <columns>
+                <p>Cheers,</p>
+                <p>Your friendly <em>Space Bar Team</em></p>
+            </columns>#}
+        </row>
+        <row class="bottom">
+            <columns>
+                <center>
+                    <spacer size="20"></spacer>
+                    <div>
+                        Envoyé depuis le serveur AuxBonnesHerbes.bzh
+                    </div>
+                </center>
+            </columns>
+        </row>
+    </container>
+{% endapply %}

@@ -1,0 +1,10 @@
+firstname:
+    label: Prénom
+lastname:
+    label: Nom
+email:
+    label: Email
+message:
+    label: Ecrivez ici votre message
+submit:
+    label: Envoyer
