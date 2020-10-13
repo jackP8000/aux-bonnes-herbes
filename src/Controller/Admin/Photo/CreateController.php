@@ -11,13 +11,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CreateController extends AbstractController
 {
-    /**
-     * @var EntityManagerInterface
-     */
     private EntityManagerInterface $entityManager;
-    /**
-     * @var UploaderHelper
-     */
+
     private UploaderHelper $uploaderHelper;
 
     public function __construct(EntityManagerInterface $entityManager, UploaderHelper $uploaderHelper)
