@@ -1,11 +1,11 @@
 doctrine:
     dbal:
-        url: '%env(resolve:DATABASE_URL)%'
-
-        # IMPORTANT: You MUST configure your db driver and server version,
-        # either here or in the DATABASE_URL env var (see .env file)
-        driver: 'pdo_mysql'
-        #server_version: '5.7'
+        dbname: '%env(resolve:DB_NAME)%'
+        host: localhost
+        port: 3306
+        user: '%env(resolve:DB_USER)%'
+        password: '%env(resolve:DB_PASSWORD)%'
+        server_version: mariadb-10.3.22
 
         # Only needed for MySQL (ignored otherwise)
         charset: utf8mb4
