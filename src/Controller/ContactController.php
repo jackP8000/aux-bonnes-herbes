@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Form\ContactFormType;
-use App\Model\DTO\contactFormDTO;
+use App\Model\DTO\ContactFormDTO;
 use App\Service\Mailer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -16,7 +16,7 @@ class ContactController extends AbstractController
      */
     public function show(Request $request, Mailer $mailer)
     {
-        $contactFormDTO = new contactFormDTO();
+        $contactFormDTO = new ContactFormDTO();
 
         $contactForm = $this->createForm(ContactFormType::class, $contactFormDTO);
 

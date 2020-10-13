@@ -4,15 +4,14 @@
     <row>
         <columns>
             <p>
-                <strong>{{ contactFormDTO.name }}</strong> vous a contacté par le biais du formulaire de contact d'Aux
-                Bonnes Herbes.
+                <strong>{{ contactFormDTO.name }}</strong> {{ 'contact.paragraph.first'|trans({}, 'email') }}
             </p>
         </columns>
     </row>
     <row>
         <columns>
             <p>
-                Voici son message :
+                {{ 'contact.paragraph.second'|trans({}, 'email') }}
             </p>
         </columns>
     </row>
@@ -28,7 +27,7 @@
     <row>
         <columns>
             <center>
-                Vous pouvez lui répondre par mail :
+                {{ 'contact.paragraph.third'|trans({}, 'email') }}
                 <a href="mailto:{{ contactFormDTO.email }}">{{ contactFormDTO.email }}</a>
             </center>
         </columns>
