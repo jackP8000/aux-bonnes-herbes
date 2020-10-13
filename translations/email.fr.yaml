@@ -1,0 +1,10 @@
+footer:
+    send-to: Email envoyé à %name% - %email%
+contact:
+    from:
+        name: "%name% depuis auxbonnesherbes.bzh"
+    subject: AuxBonnesHerbes - Formulaire de Contact
+    paragraph:
+        first: vous a envoyé un message.
+        second: "Voici son message : "
+        third: "Vous pouvez lui répondre par mail : "

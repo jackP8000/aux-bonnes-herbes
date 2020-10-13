@@ -8,9 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class NavController extends AbstractController
 {
-    /**
-     * @var RoomRepository
-     */
     private RoomRepository $roomRepository;
 
     public function __construct(RoomRepository $roomRepository)

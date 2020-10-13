@@ -1,0 +1,23 @@
+{% for msg in app.session.flashBag.get('success') %}
+    <div class="container-fluid">
+        <div class="alert alert-success" role="alert">
+            {{ msg|trans({}, 'alerts') }}
+        </div>
+    </div>
+{% endfor %}
+
+{% for msg in app.session.flashBag.get('warning') %}
+    <div class="container-fluid">
+        <div class="alert alert-warning">
+            {{ msg|trans({}, 'alerts') }}
+        </div>
+    </div>
+{% endfor %}
+
+{% for msg in app.session.flashBag.get('danger') %}
+    <div class="container-fluid">
+        <div class="alert alert-danger">
+            {{ msg|trans({}, 'alerts') }}
+        </div>
+    </div>
+{% endfor %}

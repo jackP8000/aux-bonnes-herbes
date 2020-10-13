@@ -1,0 +1,36 @@
+{% extends 'email/email.base.html.twig' %}
+
+{% block content %}
+    <row>
+        <columns>
+            <p>
+                <strong>{{ contactFormDTO.name }}</strong> {{ 'contact.paragraph.first'|trans({}, 'email') }}
+            </p>
+        </columns>
+    </row>
+    <row>
+        <columns>
+            <p>
+                {{ 'contact.paragraph.second'|trans({}, 'email') }}
+            </p>
+        </columns>
+    </row>
+    <spacer size="30"></spacer>
+    <row>
+        <columns>
+            <center>
+                <i>{{ contactFormDTO.message }}</i>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    <row>
+        <columns>
+            <center>
+                {{ 'contact.paragraph.third'|trans({}, 'email') }}
+                <a href="mailto:{{ contactFormDTO.email }}">{{ contactFormDTO.email }}</a>
+            </center>
+        </columns>
+    </row>
+
+{% endblock %}

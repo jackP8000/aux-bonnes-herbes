@@ -20,7 +20,7 @@ cs-ci:
 ## start and stop server
 ##---------------------------------------------------------------------------
 start: ## start symfony server
-	symfony run -d yarn encore dev --watch
+	symfony run -d yarn encore dev --watch --hot
 	symfony serve --no-tls -d
 
 stop: ## stop server
