@@ -1,9 +1,9 @@
 <?php
 
-return array (
-  'ADMIN_EMAIL' => NULL,
-  'APP_SECRET' => NULL,
-  'DB_PASSWORD' => NULL,
-  'DB_USER' => NULL,
-  'MAILER_DSN' => NULL,
-);
+return [
+  'ADMIN_EMAIL' => null,
+  'APP_SECRET' => null,
+  'DB_PASSWORD' => null,
+  'DB_USER' => null,
+  'MAILER_DSN' => null,
+];

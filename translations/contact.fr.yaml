@@ -1,10 +1,25 @@
-firstname:
-    label: Prénom
-lastname:
-    label: Nom
-email:
-    label: Email
-message:
-    label: Ecrivez ici votre message
-submit:
-    label: Envoyer
+contact-informations:
+    title: Nos coordonnées
+    p-1: Vous désirez prendre contact avec nous, avoir des renseignements complémentaires, vous pouvez nous
+        contacter par email à <a href=mailto:"mariereneerupin@gmail.com">mariereneerupin@gmail.com</a>
+    p-2: Vous pouvez également utiliser le formulaire ci-dessous.
+form:
+    title: Formulaire de contact
+    firstname:
+        label: Prénom
+    lastname:
+        label: Nom
+    email:
+        label: Email
+    message:
+        label: Ecrivez ici votre message
+    submit:
+        label: Envoyer
+location:
+    title: Localisation
+    address:
+        name: Marie-Renée et Jean-Luc Rupin
+        street: La Mettrie
+        city: 35680 Bais
+    p-1: Nous nous trouvons au Sud-Est de Rennes (35 km), entre Vitré (14 km) et La Guerche de Bretagne (12 km).
+    p-2: Notre gite se situe à 1km500 du bourg de Bais, sur la route de Torcé.
