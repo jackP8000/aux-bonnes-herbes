@@ -19,3 +19,11 @@ equipment:
     room: "Chambre en mezzanine. Deux fauteuils, commode, chevets"
     terrace: "Une terrasse côté champ permet la tranquillité et la possibilité de manger à l’extérieur. Un jardinet est à disposition avec quelques plantes aromatiques."
     washing-machine: "Dans un local mitoyen, un lave linge est disponible."
+    linen: Draps et linge de toilette non fournis (Voir prestations supplémentaires)
+
+price:
+    title: Tarifs semaine complète (du samedi au samedi)
+    peak-season: "Haute saison* : 295 € pour 1 ou 2 personnes (20 € par personne supplémentaire)"
+    off-season: "Basse saison* : 240 € pour 1 ou 2 personnes (24 € par personne supplémentaire)"
+    season-clarification: "* Haute saison : du 1er juillet au 31 août et vacances scolaires"
+    other: "Autres demandes : nous consulter"
